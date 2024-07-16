@@ -67,10 +67,16 @@ body
     font-size: 14px;
 }
 
+.dialog p
+{
+    display: flex;
+    justify-content: center;
+}
+
 .dialog .buttonDiv
 {
     width: 100%;
-    margin: 50px 0px 10px 0px;
+    margin: 30px 0px 10px 0px;
     height: 36px;
     display: flex;
     justify-content: center;
