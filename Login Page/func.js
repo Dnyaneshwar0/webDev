@@ -12,7 +12,6 @@ document.querySelector("#pass").addEventListener("keyup", function(event)
             }
             else
             {
-                // label.innerHTML="numbers detected";
                 if(!(/[A-Z]/.test(pwd)))
                 {
                     label.innerHTML="Please add atleast one Uppercase Letter [A-Z]"

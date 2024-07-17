@@ -25,8 +25,6 @@ body
     color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.205);
-    /* transition: opacity 200ms ease-in; */
-    transition-property: location;
 }
 
 .dialog h1
