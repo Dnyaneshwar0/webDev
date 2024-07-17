@@ -3,14 +3,36 @@ document.querySelector("#pass").addEventListener("keyup", function(event)
     let pwd=document.querySelector("#pass").value;
     let label=document.querySelector("p");
     if(pwd)
-    {    
-        if(/\d/.test(pwd))
+    {
+        if(pwd.length>=8)
         {
-            label.innerHTML="Your password contains numbers.";
+            if(!(/\d/.test(pwd)))
+            {
+                label.innerHTML="Please add atleast one number.";
+            }
+            else
+            {
+                // label.innerHTML="numbers detected";
+                if(!(/[A-Z]/.test(pwd)))
+                {
+                    label.innerHTML="Please add atleast one Uppercase Letter [A-Z]"
+                }
+                else
+                {
+                    if(!(/[!@#$%^&*_]/.test(pwd)))
+                    {
+                        label.innerHTML="Please add atleast one Special Character"
+                    }
+                    else
+                    {
+                        label.innerHTML="Password acceptable."
+                    }
+                }
+            }
         }
         else
         {
-            label.innerHTML="No numbers detected";
+            label.innerHTML="Please enter atleast 8 characters."
         }
     }
     else
