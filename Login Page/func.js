@@ -39,3 +39,9 @@ document.querySelector("#pass").addEventListener("keyup", function(event)
         label.innerHTML="No password detected";
     }
 });
+
+document.querySelector("#btn").addEventListener("click",function(event)
+{
+    let dialog = document.querySelector("#dlg");
+    dialog.style.transform = "translate(200vw, 0vh)";
+});
