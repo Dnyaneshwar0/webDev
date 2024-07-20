@@ -42,6 +42,9 @@ document.querySelector("#pass").addEventListener("keyup", function(event)
 
 document.querySelector("#btn").addEventListener("click",function(event)
 {
-    let dialog = document.querySelector("#dlg");
-    dialog.style.transform = "translate(200vw, 0vh)";
+    let dialog1 = document.querySelector("#dlg");
+    dialog1.style.transform = "translate(0px, -200vh)";
+    
+    let dialog2 = document.querySelector("#dlg1");
+    dialog2.style.transform = "translate(0px, -150vh)";
 });

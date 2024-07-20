@@ -12,8 +12,17 @@ body
     overflow: hidden;
 }
 
+.group
+{
+    display:inline-flex;
+    justify-content: center;
+}
+
 .dialog
 {
+    display: flex;
+    justify-content: center;
+
     width: 350px;
     padding: 30px;
     padding-top: 7px;
@@ -28,9 +37,14 @@ body
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.205);
     transition-property: transform;
-    transition-duration: 1500ms;
-    transition-timing-function: ease-in;
+    transition-duration: 2000ms;
+    transition-timing-function: ease-in-out;
     transition-delay: 200ms;
+}
+
+.dialog form
+{
+    width: 80%;
 }
 
 .dialog h1
@@ -75,8 +89,7 @@ body
 
 .dialog p
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .dialog .buttonDiv
@@ -109,4 +122,11 @@ body
 .dialog button:active
 {
     opacity: 0.6;
+}
+
+#dlg1
+{
+    position: absolute;
+    margin: 150vh;
+    backdrop-filter: blur(10px);
 }
