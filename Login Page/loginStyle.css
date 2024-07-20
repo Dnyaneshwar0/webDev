@@ -47,7 +47,7 @@ body
 
 .textBox input
 {
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 20px;
     padding: 0px 10px 0px 20px;
@@ -96,6 +96,11 @@ body
 }
 
 .dialog button:hover
+{
+    opacity: 0.84;
+}
+
+.dialog button:active
 {
     opacity: 0.6;
 }
