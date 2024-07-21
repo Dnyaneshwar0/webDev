@@ -43,8 +43,17 @@ document.querySelector("#pass").addEventListener("keyup", function(event)
 document.querySelector("#btn").addEventListener("click",function(event)
 {
     let dialog1 = document.querySelector("#dlg");
-    dialog1.style.transform = "translate(0px, -200vh)";
+    dialog1.style.transform = "translate(0px, -100vh)";
     
     let dialog2 = document.querySelector("#dlg1");
-    dialog2.style.transform = "translate(0px, -150vh)";
+    dialog2.style.transform = "translate(0px, -100vh)";
+});
+
+document.querySelector("#btn1").addEventListener("click",function(event)
+{
+    let dialog1 = document.querySelector("#dlg");
+    dialog1.style.transform = "translate(0px, 0vh)";
+    
+    let dialog2 = document.querySelector("#dlg1");
+    dialog2.style.transform = "translate(0px, 1vh)";
 });
